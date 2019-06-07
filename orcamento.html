@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>African House</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+      form p {
+        letter-spacing: 4px;
+        margin-left: 10px;
+      }
+
+      #plano-personalizado {
+        text-align: center;
+        width: 50%;
+        margin: 0 auto 0 auto;
+      }
+
+      .plano-personalizado-btn {
+        width: 30%;
+        margin: 0 auto 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">Afrikan House</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="cardapio.html">Cardápio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicos.html">Eventos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#desceai">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="orcamento.html">Orçamento</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    <section class="pricing py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Soft</h5>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Cardápio Soft</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Ambientes: Garden, Village e Lounge</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Fotográfo</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Festa e Baile</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Até 200 pessoas</li>
+                </ul>
+                <a href="#plano-personalizado" class="btn btn-block btn-primary text-uppercase" onclick="verSoft()">ORÇAMENTAR</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Plus</h5>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Cardápio Plus</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Ambientes: Garden, Village e Lounge</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Fotográfo</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Festa e Baile</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Até 300 pessoas</li>
+                </ul>
+                <a href="#plano-personalizado" class="btn btn-block btn-primary text-uppercase" onclick="verPlus()">ORÇAMENTAR</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Premium</h5>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Cardápio Premium</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Ambientes: Garden, Village e Lounge</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Fotográfo</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Festa e Baile</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Até 500 pessoas</li>
+                </ul>
+                <a href="#plano-personalizado" class="btn btn-block btn-primary text-uppercase" onclick="verPremium()">ORÇAMENTAR</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <br>
+      <br>
+      
+      <form id="plano-personalizado">
+        <h2 style="text-align: center">Personalizado</h2>
+        <br><br>
+        <p>
+          Ambientes: Garden <input type="checkbox" id="garden">
+          Village <input type="checkbox" id="village">
+          Lounge <input type="checkbox" id="lounge"> 
+        </p>
+        <p>
+          Fotógrafo <input type="checkbox" id="fotografo">
+        </p>
+        <p>
+          Festa <input type="checkbox" id="festa" />
+          Baile <input type="checkbox" id="baile" />
+        </p>
+        <p>
+          Cardápios: Soft <input type="checkbox" id="cardapio-soft" />
+          Plus <input type="checkbox" id="cardapio-plus" />
+          Premium <input type="checkbox" id="cardapio-premium" />
+        </p>
+        <p>
+          Quantidade de pessoas: <input type="number" id="qpessoas" size="20" min="1" max="500" />
+        </p>
+        <a href="#plano-personalizado" class="btn btn-block btn-primary text-uppercase plano-personalizado-btn" onclick="verPersonalizado()">ORÇAMENTAR</a>
+        <br/><br/>
+        <h3 id="valorTotal"></h3>
+        <br/><br/>
+      </form>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    <footer class="page-footer font-small indigo" style="background-color: #DCDCDC;" id="desceai">
+      
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <div class="container">
+        <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="orcamento.html">Orçamento</a>
+            </h6>
+          </div>
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="contato.html">Contato</a>
+            </h6>
+          </div>
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="servicos.html">Serviços</a>
+            </h6>
+          </div>
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="galeria.html">Galeria</a>
+            </h6>
+          </div>
+
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="cardapio.html">Cardápio</a>
+            </h6>
+          </div>
+        </div>
+        
+        <hr class="rgba-white-light" style="margin: 0 15%;">
+
+        <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+          <div class="col-md-8 col-12 mt-5">
+            <p style="line-height: 1.7rem">O Afrikan House com toda satisfação elabora seu evento com toda a satisfação e prazer, pois nós trabalhamos com qualidade de serviço, atendimento e suporte ao usuário. Dedicação total à você.  </p>
+          </div>
+        </div>
+
+        <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+        
+      </div>
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2019 Copyright
+        <a href="https://mdbootstrsap.com/education/bootstrap/">Afrikan House</a>
+      </div>
+      <!-- Bootstrap dependencies -->
+      <script src="js/jquery-3.3.1.slim.min.js"></script>
+      <script src="js/popper.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+    </footer>
+  </body>
+</html>
